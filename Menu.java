@@ -39,7 +39,18 @@ public class Menu {
                     System.out.println("punto 5");
                     break;
                 case 6:
-                    System.out.println("punto 6");
+                    System.out.println("punto 6");{
+                        int n =0;
+                        System.out.println("ingrese el tamaño de la lista de precios n * n ");
+                        n=sc.nextInt();
+                        punto6 I=new punto6();
+                        inventario[][] i= new inventario[n][n];
+                        System.out.println("Vamos a llenar el pirmer inventario");
+                        i= I.llenado(i);
+                        System.out.println("Matriz 1");
+                        System.out.println("--------------------------------------------- ");
+                        I.mostrar(i);
+                    }
                     break;
                 case 7:
                     System.out.println("punto 7");
@@ -64,6 +75,10 @@ public class Menu {
             }
 
         }
+    
 
     }
+    
+
+
 }
